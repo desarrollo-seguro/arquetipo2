@@ -15,11 +15,17 @@
     {
       "id": 1,
       "numeroExpediente": "EXP2023001",
-      "nombre": "Ana",
-      "apellido": "García López",
-      "nif": "12345678A",
-      "email": "ana.garcia@example.com",
-      "telefono": "600123456",
+      "solicitante": {
+        "id": 1,
+        "nif": "12345678A",
+        "nombre": "Ana",
+        "apellido1": "García",
+        "apellido2": "Pérez",
+        "email": "ana.garcia@example.com",
+        "telefono": 600112233,
+        "numExpedientesAbiertosEnTramite": 2,
+        "numExpedientesResueltos": 5
+      },
       "estadoId": 1,
       "estado": "Activo",
       "fecha": "2023-10-26"
@@ -27,11 +33,17 @@
     {
       "id": 2,
       "numeroExpediente": "EXP2023002",
-      "nombre": "Carlos",
-      "apellido": "Martínez Ruiz",
-      "nif": "87654321B",
-      "email": "carlos.martinez@example.com",
-      "telefono": "600654321",
+      "solicitante": {
+        "id": 2,
+        "nif": "87654321B",
+        "nombre": "Luis",
+        "apellido1": "Martínez",
+        "apellido2": "Rodríguez",
+        "email": "luis.martinez@example.com",
+        "telefono": 600445566,
+        "numExpedientesAbiertosEnTramite": 1,
+        "numExpedientesResueltos": 3
+      },
       "estadoId": 2,
       "estado": "Inactivo",
       "fecha": "2023-11-15"
@@ -39,23 +51,35 @@
     {
       "id": 3,
       "numeroExpediente": "EXP2024001",
-      "nombre": "Lucía",
-      "apellido": "Fernández Soria",
-      "nif": "11223344C",
-      "email": "lucia.fernandez@example.com",
-      "telefono": "600112233",
-      "estadoId": 3,
-      "estado": "Suspendido",
+      "solicitante": {
+        "id": 3,
+        "nif": "11223344C",
+        "nombre": "Sofía",
+        "apellido1": "López",
+        "apellido2": "Jiménez",
+        "email": "sofia.lopez@example.com",
+        "telefono": 600778899,
+        "numExpedientesAbiertosEnTramite": 0,
+        "numExpedientesResueltos": 1
+      },
+      "estadoId": 1,
+      "estado": "Activo",
       "fecha": "2024-01-20"
     },
     {
       "id": 4,
       "numeroExpediente": "EXP2024002",
-      "nombre": "David",
-      "apellido": "Jiménez Pons",
-      "nif": "44556677D",
-      "email": "david.jimenez@example.com",
-      "telefono": "600445566",
+      "solicitante": {
+        "id": 4,
+        "nif": "44556677D",
+        "nombre": "Carlos",
+        "apellido1": "Sánchez",
+        "apellido2": "Gómez",
+        "email": "carlos.sanchez@example.com",
+        "telefono": 600123123,
+        "numExpedientesAbiertosEnTramite": 3,
+        "numExpedientesResueltos": 2
+      },
       "estadoId": 4,
       "estado": "Finalizado",
       "fecha": "2024-02-10"
@@ -63,11 +87,17 @@
     {
       "id": 5,
       "numeroExpediente": "CYPTEST001",
-      "nombre": "Juan",
-      "apellido": "Los",
-      "nif": "12345678Z",
-      "email": "a@mimail.com",
-      "telefono": "123456789",
+      "solicitante": {
+        "id": 1,
+        "nif": "12345678Z",
+        "nombre": "Juan",
+        "apellido1": "Los",
+        "apellido2": "Mock",
+        "email": "a@mimail.com",
+        "telefono": 123456789,
+        "numExpedientesAbiertosEnTramite": 1,
+        "numExpedientesResueltos": 0
+      },
       "estadoId": 1,
       "estado": "Activo",
       "fecha": "2024-03-01"
@@ -81,7 +111,7 @@
       "apellido1": "García",
       "apellido2": "Pérez",
       "email": "ana.garcia@example.com",
-      "telefono": "600112233",
+      "telefono": 600112233,
       "numExpedientesAbiertosEnTramite": 2,
       "numExpedientesResueltos": 5
     },
@@ -90,9 +120,9 @@
       "nif": "87654321B",
       "nombre": "Luis",
       "apellido1": "Martínez",
-      "apellido2": null,
+      "apellido2": "Rodríguez",
       "email": "luis.martinez@example.com",
-      "telefono": "600445566",
+      "telefono": 600445566,
       "numExpedientesAbiertosEnTramite": 1,
       "numExpedientesResueltos": 3
     },
@@ -103,7 +133,7 @@
       "apellido1": "López",
       "apellido2": "Jiménez",
       "email": "sofia.lopez@example.com",
-      "telefono": "600778899",
+      "telefono": 600778899,
       "numExpedientesAbiertosEnTramite": 0,
       "numExpedientesResueltos": 1
     },
@@ -112,11 +142,22 @@
       "nif": "44556677D",
       "nombre": "Carlos",
       "apellido1": "Sánchez",
-      "apellido2": null,
+      "apellido2": "Gómez",
       "email": "carlos.sanchez@example.com",
-      "telefono": "600123123",
+      "telefono": 600123123,
       "numExpedientesAbiertosEnTramite": 3,
       "numExpedientesResueltos": 2
+    },
+    {
+      "id": 5,
+      "nif": "12345678Z",
+      "nombre": "Juan",
+      "apellido1": "Los",
+      "apellido2": "Mock",
+      "email": "a@mimail.com",
+      "telefono": 123456789,
+      "numExpedientesAbiertosEnTramite": 1,
+      "numExpedientesResueltos": 0
     }
-  ]  
+  ]
 }
